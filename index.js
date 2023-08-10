@@ -35,7 +35,7 @@ app.get("/", async (req, res) => {
     console.log(result);
     res.render("index.ejs", { data: result, t: ty, p: par });
   } catch (error) {
-    console.error("Failed to make request:", error.message);
+    // console.error("Failed to make request:", error.message);
     res.render("index.ejs", {
       error: error.message,
     });
